@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str= prompt("Enter a number or string:");
+         //alert(str.match(/[aeiouAEIOU])/));
+         
+
+         if(isNaN(str))
+         {
+        //alert(str);
+        for(i=0;i<=str.length;i++)
+        {              a=str[i];
+             if(a=='a' || a=='e' || a=='i' || a=='o' || a=='u'|| a=='A'|| a=='E'|| a=='U' || a=='O' )
+        
+        //for(i=str.length-1;i>=0;i--){
+            
+          break;
+       }     if( str.lenth<i)
+         {
+             alert( "The given owels is "+i);
+     }
+          else
+             {
+             alert("There is no owels");
+             }
+        }
+        
+        
+        
+         else
+         {
+             var num,rev=0,rem;
+            num=parseInt(str);
+            while(num!=0)
+             {
+             rem = num % 10;
+             rev=rev*10+rem;
+             num= parseInt(num/ 10);
+             }
+             alert("Reverse number is"+rev);
+        }
+        
+
+        
+
+
+
+       
+        
+             
+
+        
+//            alert("the reverse of the number is"+rev);
+    
+//    // }
+    </script>
+</body>
+</html>
