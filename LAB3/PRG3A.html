@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+document.write("<h3>3a.Fibonacci!</h3>")
+n=prompt("Enter a number minimum 2!");
+f1=0;
+f2=1;
+document.write("Fibonacci Series upto " + n + "is: <br/>");
+document.write(f1 + "<br/>" + f2 + "<br/>" );
+for(i = 3; i <= n; i++){
+    f3=f1+f2;
+    f1=f2;
+    f2=f3;
+    document.write(f3 + "<br/>");
+}
+
+
+    </script>
+</body>
+</html>
